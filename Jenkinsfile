@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo "nu ga ik alles effen builden"
+				sh './gradlew --no-deamon'
             }
         }
         stage('Test') {
